@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS work5</title>
+</head>
+<body>
+    <h2>14行目からのコメントの指示に従って作業してください。</h2>
+    <p>プログラムの実行結果は開発者ツールのコンソールに表示されています。</p>
+    <br>
+    <p>コンソールを開くには、画面で右クリックして、「検証」という項目をクリックします。<br>（Windowsであれば、F12キーでも開けます）</p>
+    <script>
+       /* 課題：
+          1. 25行目より下に、「定数BoyAが400未満であれば、BoyAの値をコンソールに出力する」というプログラムを書いてください。
+          2. 1.のプログラムより下に、「定数BoyBが1000未満であれば、BoyBの値をコンソールに出力する」というプログラムを書いてください。
+          3. 2.のプログラムより下に、コメントで、「1.と2.のプログラムの結果、コンソールに何が出力されたか」という結果を書いてください。
+          - 上の課題を満たせたら、このファイルを提出してください。
+          (joukenA, joukenBは毎回ランダムな数字になるので、実行のたびに結果が変わります)
+        */
+
+        const BoyA = Math.floor(Math.random() * 80) + 90;
+        const BoyB = Math.floor(Math.random() * 80) + 90;
+        console.log(`BoyA = ${BoyA}, BoyB = ${BoyB}`);
+        // ここより上の行は編集禁止です。
+  
+        if (BoyA < 400) {
+            console.log(BoyA);
+        }
+
+        if (BoyB < 1000) {
+            console.log(BoyB);
+        }
+
+        // BoyA = 160, BoyB = 150
+  
+      </script>
+    
+</body>
+</html>
