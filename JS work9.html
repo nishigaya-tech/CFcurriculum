@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS work9</title>
+</head>
+<body>
+    <h2>14行目からのコメントの指示に従って作業してください。</h2>
+    <p>プログラムの実行結果は開発者ツールのコンソールに表示されています。</p>
+    <br>
+    <p>コンソールを開くには、画面で右クリックして、「検証」という項目をクリックします。<br>（Windowsであれば、F12キーでも開けます）</p>
+    <script>
+        /*課題：変数を自分で作成し１から下記のプログラムを記述してください！
+            １次の条件を満たすJavaScriptコードを書いてください。（変数名は、ageで宣言してください）
+                変数ageが20未満の時で、変数ageが18以上の場合に「未成年ではないけど、お酒は飲めません」を出力します。
+                変数ageが20以上の時で「成人です。」を出力します。
+                それ以外の時は「未成年です。」を出力するプログラムを書いてください。
+
+
+            ２次の条件を満たすJavaScriptコードを書いてください。（変数名は、「temp」と「season」で宣言してください）
+                変数tempが１未満で変数seasonが冬の場合に「今日は非常に寒いです！」を出力。
+                変数tempが15以上で変数seasonが冬の場合に「冬にしては暖かいです！」を出力。
+                変数tempが30以上またはseasonが夏の場合に「暑すぎて死ぬ！」を出力。
+                変数tempが50以上でseasonが夏の場合または変数tempが-100未満で変数seasonが冬の場合に「死にました！」を出力。
+        */
+
+        //下記からコードを記述してください。
+        //ヒント（）の中に（）を記述すると数学のように（）内を先に処理するというようなことができるよ！
+        let age = 19;
+
+        if (age >= 18 && age < 20) {
+            console.log("未成年ではないけど、お酒は飲めません");
+        } else if (age >= 20) {
+            console.log("成人です。");
+        } else {
+            console.log("未成年です。");
+        }
+
+
+        let temp = 10;
+        let season = "冬";
+
+        if (temp >= 50 && season === "夏" || temp < -100 && season === "冬") {
+            console.log("死にました！");
+        } else if (temp < 1 && season === "冬") {
+            console.log("今日は非常に寒いです！");
+        } else if (temp >= 15 && season === "冬") {
+            console.log("冬にしては暖かいです！");
+        } else if (temp >= 30 || season === "夏") {
+            console.log("暑すぎて死ぬ！");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS work13</title>
+</head>
+<body>
+    <h2>14行目からのコメントの指示に従って作業してください。</h2>
+    <p>プログラムの実行結果は開発者ツールのコンソールに表示されています。</p>
+    <br>
+    <p>コンソールを開くには、画面で右クリックして、「検証」という項目をクリックします。<br>（Windowsであれば、F12キーでも開けます）</p>
+    <script>
+        /*課題:関数を使い、以下のコードを記述してください。
+         出来次第、保存し提出して下さい。
+
+         ①コンソールに、「こんにちは」とコンソール表示される関数「sayHello()」を定義し、それを呼び出して下さい。
+         ②コンソールに、1~100までの数字がコンソール表示される関数「hundred()」を定義して、それを呼び出して下さい。
+         ③20〜２００までの数字で2の倍数かつ、５の倍数である数字だけをコンソール表示する関数「number()」を定義して、それを呼び出して下さい。
+        */
+               // ①
+        function sayHello() {
+            console.log("こんにちは");
+        }
+
+        sayHello();
+
+
+        // ②
+        function hundred() {
+            for (let i = 1; i <= 100; i++) {
+                console.log(i);
+            }
+        }
+
+        hundred();
+
+
+        // ③
+        function number() {
+            for (let i = 20; i <= 200; i++) {
+                if (i % 2 === 0 && i % 5 === 0) {
+                    console.log(i);
+                }
+            }
+        }
+
+        number();
+
+    </script>
+</body>
+</html>
